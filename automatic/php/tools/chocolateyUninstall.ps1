@@ -1,4 +1,5 @@
-﻿$toolsPath = Split-Path $MyInvocation.MyCommand.Definition
+﻿Set-PSDebug -Trace 2
+$toolsPath = Split-Path $MyInvocation.MyCommand.Definition
 . $toolsPath\helpers.ps1
 
 $packageName = $env:ChocolateyPackageName
